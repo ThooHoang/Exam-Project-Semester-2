@@ -15,16 +15,16 @@
       <header class="account-header">
         <div class="profile-section">
           <div class="profile-picture">
-            <img src="./src/assets/janek.png" alt="Profile picture" class="profile-img">
+            <img src="./src/assets/janek.png" alt="Profile picture" class="profile-img" id="profile-image">
           </div>
           <div class="user-info">
             <div class="name-section">
-              <h2>Janek Solecki</h2>
-              <button class="edit-button">
+              <h2 id="user-name">Janek Solecki</h2>
+              <button class="edit-button" aria-label="Edit profile">
                 <i class="fas fa-edit"></i>
               </button>
             </div>
-            <p class="user-number">66772040</p>
+            <p class="user-number" id="user-number">66772040</p>
           </div>
         </div>
 
@@ -33,16 +33,16 @@
             <h3>Story Game</h3>
             <div class="progress-container">
               <div class="progress-bar">
-                <div class="progress" style="width: 75%"></div>
+                <div class="progress" style="width: 75%" id="story-progress"></div>
               </div>
-              <span class="percentage">75%</span>
+              <span class="percentage" id="progress-percentage">75%</span>
             </div>
           </div>
 
           <div class="achievements">
             <h3>Achievements</h3>
             <p class="achievement-count">
-              <span class="completed">5</span>/20
+              <span class="completed" id="achievements-completed">5</span>/<span id="achievements-total">20</span>
             </p>
           </div>
         </div>
